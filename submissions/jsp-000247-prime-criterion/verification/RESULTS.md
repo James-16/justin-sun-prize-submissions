@@ -16,3 +16,7 @@ Formal Conjectures source: `40e7c98697de6f66b8cbdbf641749ab39ed9c152`. Prize rep
 The prior-art check included current prize issues/PRs through #275, the pinned Formal Conjectures source, plby/lean-proofs at `8822f7ddef30fadbd92e1c6ab4ed897af356af5e`, and the related public developments linked in the README. No matching all-prime necessary-and-sufficient formalization was found in this search; this is not an exhaustive priority claim.
 
 This formalizes Steinerberger's existing criterion. It does not solve the remaining open parts of Erdős 291, establish eligibility, or replace organizer review. Prize repository checks are reported separately; they do not verify mathematical truth.
+
+## Verification-command correction, 2026-09-17 UTC
+
+The script now uses `lean -E warning` instead of the unsupported `lean --wfail` flag. The corrected exact-statement/axiom command was run successfully (exit status 0); see `command-fix-audit.txt`. The Lean proof sources are unchanged. Their previously recorded full kernel replay remains the proof verification evidence.
