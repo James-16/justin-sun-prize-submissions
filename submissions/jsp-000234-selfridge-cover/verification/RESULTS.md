@@ -18,3 +18,7 @@ Formal Conjectures: `40e7c98697de6f66b8cbdbf641749ab39ed9c152`. Numerical-certif
 The prior-art check included public prize issues/PRs through #275, the Formal Conjectures snapshot, the plby proof collection, and the reconstruction repository linked in the README. That repository has a related parity-reduction proof. No matching completed formalization of the p >= 3 covering variant was found in this search; this is not an exhaustive priority claim.
 
 This formalizes an existing construction. It does not solve the open p >= 5 problem, establish eligibility, or replace organizer review. Prize repository checks are reported separately; they do not certify mathematical truth.
+
+## Verification-command correction, 2026-09-17 UTC
+
+The script now uses `lean -E warning` instead of the unsupported `lean --wfail` flag. The corrected exact-statement/axiom command was run successfully (exit status 0); see `command-fix-audit.txt`. The Lean proof sources are unchanged. Their previously recorded full kernel replay remains the proof verification evidence.
